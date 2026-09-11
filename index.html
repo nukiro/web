@@ -1,77 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            max-width: 600px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(90deg, #58a6ff, #a371f7);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        p {
-            font-size: 1.1rem;
-            color: #8b949e;
-            margin-bottom: 2rem;
-        }
-        .badge {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background: #21262d;
-            border: 1px solid #30363d;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            color: #3fb950;
-        }
-        .links {
-            margin-top: 2rem;
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-        }
-        a {
-            color: #58a6ff;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            border: 1px solid #30363d;
-            border-radius: 6px;
-            transition: all 0.2s;
-        }
-        a:hover {
-            background: #21262d;
-            border-color: #58a6ff;
-        }
-    </style>
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Carlos Aguilar Miguel — software and data engineer based in Granada, Spain.">
+    <title>Carlos Aguilar Miguel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🚀 Deploy exitoso</h1>
-        <p>Tu portfolio está funcionando en GitHub Pages con dominio personalizado.</p>
-        <span class="badge">✓ GitHub Pages activo</span>
-        
-        <div class="links">
-            <a href="https://github.com/tu-usuario" target="_blank">GitHub</a>
-            <a href="mailto:tu@email.com">Contacto</a>
+    <header class="site-header">
+        <a class="site-title" href="/">Carlos Aguilar Miguel</a>
+        <nav class="site-nav" aria-label="Primary">
+            <a href="https://www.linkedin.com/in/cagmi/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main class="intro">
+        <h1>Carlos is a software and data engineer who designs, builds, and operates high-performance backend and data systems.</h1>
+
+        <div class="intro-body">
+            <p>I work the full lifecycle: architecture, implementation, deployment, testing, and infrastructure.</p>
+            <p>My work sits on three pillars. System design — end-to-end solutions spanning data models, storage, APIs, containerized services, CI/CD, and monitoring. Implementation — I code what I design, from databases and REST APIs to backend services and frontend components, mainly in Python and JavaScript/TypeScript, with hands-on work in Rust, Go, C, and Zig. Cloud infrastructure — I design and operate AWS and GCP with Terraform, plus monitoring and observability.</p>
+            <p>I use AI to speed up the work, but I am not a vibe coder. I build the foundations myself — architecture, core behavior, and data structures — and only then use AI to automate, review, and refine. That is how I keep control over quality.</p>
+            <p>I am based in Granada, Spain. Curious, proactive, and at home on a team: I like debating ideas, solving hard problems, and getting better at the craft.</p>
         </div>
-    </div>
+    </main>
 </body>
 </html>
